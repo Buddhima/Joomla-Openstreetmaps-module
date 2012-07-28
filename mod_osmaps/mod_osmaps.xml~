@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.0" client="site" method="upgrade">
+	<name>OSMaps</name>
+	<author>BUDDHIMA</author>
+	<creationDate>2012</creationDate>
+	<copyright>(c) 2012 BUDDHIMA</copyright>
+	<license>http://www.gnu.org/licenseses/gpl-3.0.html GNU/GPL</license>
+	<authorEmail>buddhimawijeweera@yahoo.com</authorEmail>
+	<authorUrl>http://joomlaosm.webege.com/</authorUrl>
+	<version>1.0</version> 
+	<description>MOD_OSMAPS_DESCRIPTION</description>
+
+	
+
+	<files>		
+		<folder>language</folder>		
+		<folder>tmpl</folder>		
+		<filename>mod_osmaps.xml</filename>
+		<filename module="mod_osmaps">mod_osmaps.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>		
+	</files>
+
+
+	
+
+
+<config>
+		<fields name="params">
+			<fieldset name="mapConfig" label="MOD_OSMAP">
+				
+				<field type="list" name="zoom" default="12" label="MOD_OSMAP_ZOOM" description="MOD_OSMAP_ZOOM_DESC">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+				</field>
+				<field type="list" name="layer" default="Mapnik" label="MOD_OSMAP_LAYER" description="MOD_OSMAP_LAYER_DESC">
+  					<option value="mapnik">Mapnik</option>
+  					<option value="mapquest">MapQuest</option>
+				</field>
+				
+				<field type="spacer" name="spacerPos0" hr="true" />
+				<field type="spacer" name="centerPosition" label="MOD_OSMAP_CENTER_POSITION" class="text"/>
+				<field type="radio" name="center" default="0" label="MOD_OSMAP_CENTER" description="MOD_OSMAP_CENTER_DESC">
+					<option value="0">LON_LAT_BASED</option>
+  					<option value="1">GEO_LOCATION_BASED</option>					
+				</field>
+				<field type="text" name="lon" label="MOD_OSMAP_CENTER_LON" description="MOD_OSMAP_CENTER_LON_DESC" default="80.316633"/>
+				<field type="text" name="lat" label="MOD_OSMAP_CENTER_LAT" description="MOD_OSMAP_CENTER_LAT_DESC" default="5.560715"/>
+				<field type="text" name="geo" label="MOD_OSMAP_CENTER_GEOLOCATION" description="MOD_OSMAP_CENTER_GEOLOCATION_DESC"/>
+			</fieldset>
+
+			<fieldset name="pinsConfig" label="MOD_OSMAP_PINS">
+				<field type="radio" name="pin" default="1" label="MOD_OSMAP_PIN" description="MOD_OSMAP_PIN_DESC">
+					<option value="0">DEFAULT_PIN</option>
+  					<option value="1">NEW_PIN</option>					
+				</field>
+
+				<field type="spacer" name="spacerPos0" hr="true" />
+				<field type="spacer" name="spacerPos" label="MOD_OSMAP_PIN_POSITION" class="text"/>
+				<field type="radio" name="center" default="0" label="MOD_OSMAP_CENTER" description="MOD_OSMAP_CENTER_DESC">
+					<option value="0">LON_LAT_BASED</option>
+  					<option value="1">GEO_LOCATION_BASED</option>					
+				</field>
+				<field type="text" name="lon" label="MOD_OSMAP_PIN_LON" description="MOD_OSMAP_PIN_LON_DESC" />
+				<field type="text" name="lat" label="MOD_OSMAP_PIN_LAT" description="MOD_OSMAP_PIN_LAT_DESC" />
+				<field type="text" name="geo" label="MOD_OSMAP_GEOLOCATION" description="MOD_OSMAP_GEOLOCATION_DESC"/>
+			</fieldset>
+			
+			<!-- Popup Text -->
+			<fieldset name="popoupConfig" label="MOD_OSMAP_POPUPS">
+				<field type="editor" name="popuptext"  default="" label="MOD_OSMAP_POPUPTEXT" description="MOD_OSMAP_POPUPTEXT_DESC" filter="safehtml"/>
+			</fieldset>
+
+
+		</fields>
+	</config>
+</extension>

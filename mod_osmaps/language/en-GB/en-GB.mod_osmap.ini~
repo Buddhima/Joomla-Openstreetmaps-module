@@ -1,0 +1,40 @@
+; OSModul
+; (c) 2012 BUDDHIMA
+; GPLv3
+
+; Configuration
+MOD_OSMAP_DESCRIPTION="Add Featured OpenStreetMaps."
+
+
+MOD_OSMAP_PINS
+MOD_OSMAP_PIN="Select pin"
+MOD_OSMAP_PIN_DESC="Select the pin type and enter the positions."
+MOD_OSMAP_PIN_POSITION
+MOD_OSMAP_PIN_LON="Longitude"
+MOD_OSMAP_PIN_LON_DESC
+MOD_OSMAP_PIN_LAT="Latitude"
+MOD_OSMAP_PIN_LAT_DESC
+
+
+
+MOD_OSMAP_POPUPTEXT="Text in Popup"
+MOD_OSMAP_POPUPTEXT_DESC="HTML is alowed"
+
+; map configuration
+MOD_OSMAP="Map configuration "
+
+MOD_OSMAP_ZOOM="Zoomlevel"
+MOD_OSMAP_ZOOM_DESC="1: far , 18:  close"
+MOD_OSMAP_LAYER="Map style"
+MOD_OSMAP_LAYER_DESC="Mapnik is the default style of OpenStreetMap."
+MOD_OSMAP_CENTER_POSITION="center position of the map"
+MOD_OSMAP_CENTER_LON
+MOD_OSMAP_CENTER_LON_DESC
+MOD_OSMAP_CENTER_LAT
+MOD_OSMAP_CENTER_LAT_DESC
+
+
+; Site
+MOD_OSMAP_IMAGERY="Imagery by"
+MOD_OSMAP_MODULE_BY="Module by"
+MOD_OSMAP_OSMCOPYRIGHT="Map data © <a href="http://www.openstreetmap.org" target="_blank">OpenStreetMap</a> contributors, CC BY-SA"

@@ -1,0 +1,5 @@
+; OSModul
+; (c) 2012 Schlumpf
+; GPLv3
+
+MOD_OSMOD_DESCRIPTION="Shows OpenStreetMap with markers."
